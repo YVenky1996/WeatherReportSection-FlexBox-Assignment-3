@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: #ffffff;
+}
+
+.container img {
+    height: 140px;
+}
+
+@media (max-width:899px) {
+    .container {
+        background-image: linear-gradient(to bottom, #b96fa1, #5a3f8c);
+        height: auto;
+    }
+
+    .topCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        overflow: auto;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        border: 2px solid #e9e9e930;
+        background-color: #ffffff20;
+    }
+
+    .smallImage {
+        height: 50px;
+        width: 50px;
+    }
+
+    .bottomCard {
+        padding: 20px;
+    }
+}
+
+@media (min-width:900px) {
+    .container {
+        background-image: linear-gradient(to bottom, #b96fa1, #5a3f8c);
+        height: 100vh;
+    }
+
+    .topCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .smallImage {
+        width: 50%;
+    }
+
+    .bottomCard {
+        padding: 20px;
+        display: flex;
+    }
+}
